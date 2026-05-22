@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heaven's Bakery | Delivery & Pickup</title>
-
+  <title>Heaven's Bakery | Custom Orders</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
-
-  
   <script defer src="script.js"></script>
 </head>
 
 <body>
 
-    <header class="site-header">
+<header class="site-header">
 
     <div class="top-bar container">
 
@@ -55,6 +52,7 @@
 
     </div>
 
+    
     <nav class="navbar">
 
       <ul class="nav-links">
@@ -72,108 +70,159 @@
 
   </header>
 
+
+<main class="custom-main">
+
   
- 
-  <main class="delivery-main-container">
+  <section class="custom-order-section">
 
-    <div class="delivery-pickup-layout">
+    <div class="form-container-card">
 
-      
-      <div class="delivery-card">
-
-        <div class="delivery-card-header">
-          <span></span>
-          <h2>DELIVERY DETAILS</h2>
-        </div>
-
-        <div class="delivery-card-body">
-
-          <h3 class="form-side-title">WHO IS RECEIVING?</h3>
-
-          <form class="delivery-form">
-
-            <div class="form-field">
-              <label>Full Name</label>
-              <input type="text" placeholder="e.g. Jane Doe">
-            </div>
-
-            <div class="form-field">
-              <label>Phone Number</label>
-              <input type="tel" placeholder="+267 76789543">
-            </div>
-
-            <div class="form-field">
-              <label>Delivery Address</label>
-              <input type="text" placeholder="Street, City, Postal Code">
-            </div>
-
-            <div class="form-field">
-              <label>Delivery Instructions</label>
-              <textarea rows="3" placeholder="Gate code, landmark, special notes..."></textarea>
-            </div>
-
-            <div class="form-field">
-              <label>Delivery Time</label>
-              <input type="text" placeholder="After 5PM / ASAP">
-            </div>
-
-            <button type="button" class="delivery-action-btn">
-              PLACE DELIVERY ORDER
-            </button>
-
-          </form>
-
-        </div>
+      <div class="section-header-box">
+        <h2 class="section-title-boxed">
+          FILL IN THE ORDER FORM BELOW
+        </h2>
       </div>
 
-      
-      <div class="delivery-card">
+      <form class="custom-order-form">
 
-        <div class="delivery-card-header">
-          <span></span>
-          <h2>PICKUP DETAILS</h2>
+        <div class="form-row">
+          <label>Your Name:</label>
+          <input type="text">
         </div>
 
-        <div class="delivery-card-body">
+        <div class="form-row">
+          <label>Email:</label>
+          <input type="email">
+        </div>
 
-          <h3 class="form-side-title">WHO IS RECEIVING?</h3>
+        <div class="form-row">
+          <label>Phone Number:</label>
+          <input type="tel">
+        </div>
 
-          <form class="delivery-form">
+        <div class="form-row">
+          <label>Cake Type:</label>
 
-            <div class="form-field">
-              <label>Full Name</label>
-              <input type="text" placeholder="Full name for pickup">
-            </div>
+          <select>
+            <option>Death by Chocolate</option>
+            <option>Red Velvet</option>
+            <option>Black Forest</option>
+            <option>Carrot Cake</option>
+          </select>
+        </div>
 
-            <div class="form-field">
-              <label>Phone Number</label>
-              <input type="tel" placeholder="+267 3976437">
-            </div>
+        <div class="form-row">
+          <label>Message on Cake:</label>
+          <textarea rows="3"></textarea>
+        </div>
 
-            <div class="form-field">
-              <label>Pickup Location</label>
-              <input type="text" placeholder="Main Shop - Commerce Park">
-            </div>
+        <div class="form-row">
+          <label>Special Instructions:</label>
+          <textarea rows="3"></textarea>
+        </div>
 
-            <div class="form-field">
-              <label>Pickup Time</label>
-              <input type="text" placeholder="Preferred pickup time">
-            </div>
+      </form>
 
-            <button type="button" class="delivery-action-btn">
-              PREPARE FOR PICKUP
-            </button>
+    </div>
 
-          </form>
+  </section>
+
+  <section class="custom-order-section">
+
+    <div class="form-container-card">
+
+      <div class="section-header-box">
+        <h2 class="section-title-boxed">PAYMENT</h2>
+      </div>
+
+      <div class="payment-fields">
+
+        <div class="payment-row">
+
+          <div class="payment-field-group">
+            <label>CARD NUMBER</label>
+            <input type="text">
+          </div>
+
+          <div class="payment-field-group">
+            <label>CVV</label>
+            <input type="text">
+          </div>
 
         </div>
+
+        <div class="payment-row">
+
+          <div class="payment-field-group">
+            <label>EXPIRY</label>
+            <input type="text">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="fulfillment-options">
+
+        <button class="fulfillment-btn">
+          PICKUP
+        </button>
+
+        <span class="or-divider">OR</span>
+
+        <button class="fulfillment-btn">
+          DELIVERY
+        </button>
+
       </div>
 
     </div>
 
-  </main>
+  </section>
 
-   <footer class="site-footer">
+  
+  <section class="custom-order-section">
+
+    <div class="form-container-card age-card">
+
+      <div class="section-header-box">
+        <h2 class="section-title-boxed">AGE VERIFICATION</h2>
+      </div>
+
+      <div class="age-verification">
+
+        <div class="checkbox-row">
+          <input type="checkbox">
+          <label>I confirm I am 18 years or older</label>
+        </div>
+
+        <div class="warning-row">
+          <span class="warning-icon"></span>
+
+          <span class="warning-text">
+            If under 18, please have a parent or guardian place this order with you.
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  
+  <div class="submit-wrapper">
+
+    <button class="btn-submit-large">
+      SUBMIT CUSTOM ORDER
+    </button>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
 
     <div class="footer-columns container">
 
@@ -245,7 +294,8 @@
 
   </footer>
 
-  <div id="cart-toast" class="toast-message"></div>
+
+<div id="cart-toast" class="toast-message"></div>
 
 </body>
 </html>

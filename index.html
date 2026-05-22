@@ -1,100 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heaven's Bakery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heaven's Bakery | Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <script defer src="script.js"></script>
 </head>
 
-<body> 
+<body>
+
+  <header class="site-header">
+
+    <div class="top-bar container">
+
+      <div class="logo-area">
+
+        <div class="circle-logo">
+          <img src="images/logo.png"
+               alt="Heaven's Bakery Logo"
+               class="logo-img">
+        </div>
+
+        <span class="brand-text">
+          Heavens Bakery
+        </span>
+
+      </div>
+
+      <div class="cart-search">
+
+        <button class="cart-btn btn btn-primary">
+          MY CART
+        </button>
+
+        <div class="search-wrap">
+
+          <input type="text"
+                 placeholder="Search your favourite cake..."
+                 class="search-input">
+
+          <button class="search-icon-btn">
+            <i class="fas fa-search"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
     
-    <!--Header Section-->
-    <header>
+    <nav class="navbar">
 
-        <h1>Heaven's Bakery</h1>
-        <p>Baked fresh daily, delivered with love.</p>
-    </header>
+      <ul class="nav-links">
 
-    <!--Navigation Section-->
-    <nav> 
-        <a href="index.html">Home</a> |
-        <a href="products.html">Products</a> |
-        <a href="about.html">About Us</a> |  
-        <a href="contact.html">Contact Us</a>
-        <a href="custom-orders.html">Custom Orders</a>
-        <a href="policies.html">Policies</a>
-        <a href="delivery.html">Delivery & Pickups</a> 
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="products.html" class="active">PRODUCTS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="policies.html">POLICIES</a></li>
+        <li><a href="customorders.html">CUSTOM ORDER</a></li>
+        <li><a href="delivery.html">DELIVERY & PICKUP</a></li>
+
+      </ul>
+
     </nav>
 
-    <!--Main Content Section-->
-    <main> 
+  </header>
+  <main>
 
-        <!--Hero Section-->
-        <section>
-            <h2>Baked fresh daily, delivered with love.</h2>
-            <a href="products.html"><button>Shop Now!</button></a>
-            <a href="custom-order.html"><button>Order custom cake today!</button></a> 
-            
-        </section>
+    
+    <section class="hero">
 
-        <!--BestSellers Section-->
-        <section>
-            <h2>BestSellers of the week!</h2>
-        
+      <div class="hero-media">
+        <img src="images/bakery.jpg"
+             alt="Hero bakery display">
+      </div>
 
-        <div>
-            <h3>Chocolate Cake</h3>
-            <p>Price: 250.00</p>
-            <p> Size: medium</p>
-            <button type="button">Add to Cart</button>
+      <div class="hero-content">
+
+        <p class="hero-text">
+          "Baked fresh daily, delivered with love"
+        </p>
+
+        <div class="hero-actions">
+
+          <button class="btn btn-primary">
+            SHOP NOW!
+          </button>
+
+          <button class="btn btn-secondary">
+             Order Custom Cake TODAY!
+          </button>
+
         </div>
 
-        <div>
-            <h3>Oreo Brownies</h3>
-            <p>Price: 150.00</p>
-            <p> Size: 6 pieces</p>
-            <button type="button">Add to Cart</button>
-        </div>
-
-        <div>
-            <h3>Ginger Cookies</h3>
-            <p>Price: 50.00</p>
-            <p> Size: 5 pieces</p>
-            <button type="button">Add to Cart</button>
-        </div>
-    </section>
-
-    <!--FAQ Section-->
-    <section>
-        <h2>FREQUENTLY ASKED QUESTIONS</h2>
-
-        <details>
-            <summary>When do I pay for my order?</summary>
-            <p>Full payment is required at checkout for regular items. Custom orders require a 50% non-refundable deposit to confirm the order.</p>
-       </details>
-
-       <details>
-        <summary>Is there an age requirement to place an order?</summary>
-        <p>You must be 18 years or older to place an order. Customers under 18 years old must have parental consent to complete the purchase.</p>
-       </details>
-
-       <details>
-        <summary>What if I don't likr the taste of my order?</summary>
-        <p>Taste is subjective. We do not offer refunds based on personal taste preferences. We recommend sample testing before purchase.</p>
-       </details>
+      </div>
 
     </section>
 
-    </main>
+    
+    <section class="section">
 
-    <!--Footer Section-->
-    <footer>
-        <p>OUR LOCATION: Commerce Park, Plot 4567, Nelson Mandela Road</p>
-        <p>WORKING HOURS: Mon-Fri 0800hrs-1800hrs | Sat 0800hrs-1530hrs | Sun:CLOSED</p>
-        <p>CONTACT US : +26776789543 / 3976437 | heavensbakery@gmail.com</p>
-        <p>CONNECT WITH US :Facebook | Instagram | Tiktok | Twitter</p>
-        <p>&copy; 2026 Heaven's Bakery.</p>
-    </footer>
+      <div class="container">
+
+        <div class="section-header">
+          <h2 class="section-title">
+            Bestsellers of the WEEK!
+          </h2>
+        </div>
+
+        <div class="grid grid-3">
+
+    
+          <article class="card product-card"
+                   data-product='{"name":"Chocolate Cake","price":250}'>
+
+            <div class="card-img">
+              <img src="images/choc.jpg"
+                   alt="Chocolate Cake">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Chocolate Cake
+              </h3>
+
+              <p class="price">
+                P 250.00
+              </p>
+
+              <div class="product-options">
+
+                <label>Size:</label>
+
+                <select class="input-select">
+                  <option>medium</option>
+                  <option>large</option>
+                </select>
+
+              </div>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Chocolate Cake"
+                      data-price="250">
+
+                 Add to Cart
+
+              </button>
+
+            </div>
+
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="card product-card"
+                   data-product='{"name":"Oreo Brownie","price":150}'>
+
+            <div class="card-img">
+              <img src="images/oreo brownss.jpg"
+                   alt="Oreo Brownie">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Oreo Brownie
+              </h3>
+
+              <p class="price">
+                P 150.00
+              </p>
+
+              <div class="product-options">
+
+                <label>Size:</label>
+
+                <select class="input-select">
+                  <option>half a dozen</option>
+                  <option>dozen</option>
+                </select>
+
+              </div>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Oreo Brownie"
+                      data-price="150">
+
+                 Add to Cart
+
+              </button>
+
+            </div>
+
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="card product-card"
+                   data-product='{"name":"Ginger Cookie","price":50}'>
+
+            <div class="card-img">
+              <img src="images/choc chipss.jpg"
+                   alt="Ginger Cookie">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Ginger Cookie
+              </h3>
+
+              <p class="price">
+                P 50.00
+              </p>
+
+              <div class="product-options">
+
+                <label>Size:</label>
+
+                <select class="input-select">
+                  <option>packet of 5</option>
+                  <option>packet of 10</option>
+                </select>
+
+              </div>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Ginger Cookie"
+                      data-price="50">
+
+                Add to Cart
+
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-soft">
+
+      <div class="container">
+
+        <div class="section-header split-header">
+
+          <h2 class="section-title">
+            Frequently Asked Questions
+          </h2>
+
+          <span class="help-icon">
+            <i class="fas fa-question-circle"></i>
+          </span>
+
+        </div>
+
+        <div class="grid grid-3">
+
+          <article class="card faq-card">
+
+            <h3 class="faq-question">
+              Q: When do I pay for my order?
+            </h3>
+
+            <p class="faq-answer">
+              Full payment is required at checkout for regular items,
+              custom orders require 50% non-refundable deposit to confirm.
+            </p>
+
+          </article>
+
+          <article class="card faq-card">
+
+            <h3 class="faq-question">
+              Q: Is there an age requirement to order?
+            </h3>
+
+            <p class="faq-answer">
+              You must be 18 years or older to place an order.
+            </p>
+
+          </article>
+
+          <article class="card faq-card">
+
+            <h3 class="faq-question">
+              Q: What if I don't like the taste?
+            </h3>
+
+            <p class="faq-answer">
+              Taste is subjective. We recommend sample testing before purchase.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+   <footer class="site-footer">
+
+    <div class="footer-columns container">
+
+      <div class="footer-col">
+
+        <div class="footer-logo-circle">
+          <img src="images/logo.png"
+               alt="Heaven's Bakery logo">
+        </div>
+
+        <p class="footer-slogan">
+          Baked fresh daily, delivered with love
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> OUR LOCATION</h4>
+
+        <p>
+          Commerce Park, Plot 4587,
+          Nelson Mandela Road.
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> WORKING HOURS</h4>
+
+        <p>
+          Mon-Fri 0800hrs - 1800hrs<br>
+          Sat 0800hrs - 1530hrs<br>
+          Sun: CLOSED
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> CONTACT US</h4>
+
+        <p>
+           +267 76789543 / 3976437<br>
+           heavensbakery@gmail.com
+        </p>
+
+        <div class="social-row">
+
+          <span>CONNECT WITH US!</span>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+      <p>@2026 | Heaven's Bakery</p>
+    </div>
+
+  </footer>
+
+  <div id="cart-toast" class="toast-message"></div>
+
 </body>
-
 </html>

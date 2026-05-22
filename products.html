@@ -1,328 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heaven's Bakery- Product Details</title>
-    </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <!--Navigation Section-->
-        <nav> 
-            <a href="index.html">Home</a> |
-            <a href="products.html">Products</a> |
-            <a href="about.html">About Us</a> |  
-            <a href="contact.html">Contact Us</a>
-            <a href="custom-orders.html">Custom Orders</a>
-            <a href="policies.html">Policies</a>
-            <a href="delivery.html">Delivery & Pickups</a>
-        </nav>
+  <title>Heaven's Bakery | Products</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
 
-        <!--Main Content Section-->
-        <main>
+<body>
 
-            <!--Cakes Section-->
-            <section>
-                <h2>OUR DELICIOUS CAKES!</h2>
+  <!-- =========================
+       HEADER
+  ========================== -->
+  <header class="site-header">
 
-                <div>
-                    <h3>Death by Chocolate</h3>
-                    <p>A rich and moist chocolate cake, perfect for any occasion. Made with high-quality cocoa and topped with a smooth chocolate ganache.</p>
-                    <label for="size-choc">Select Size:</label>
-                    <select id="size-choc" name="size">
-                        <option value="13cm">13cm</option>
-                        <option value="18cm">18cm</option>
-                        <option value="20cm">20cm</option>
-                    </select>
+    <div class="top-bar container">
 
-            <br><br>
-            <label for="price-choc">Price:</label>
-            <select id="price-choc" name="price">
-                <option value="300">P300.00</option>
-                <option value="350">P350.00</option>
-                <option value="400">P400.00</option>
-                </select>
-                <br><br>
-                <button type="button">Buy Now</button>
-                </div>
+      <div class="logo-area">
 
-                <div>
-                    <h3>Red Velvet Cake</h3>
-                    <p>A classic red velvet cake with a hint of cocoa, layered with creamy cream cheese frosting. Perfect for birthdays and celebrations.</p>
-                    <label for="size-red">Select Size:</label>
-                    <select id="size-red" name="size">
-                        <option value="13cm">13cm</option>
-                        <option value="18cm">18cm</option>
-                        <option value="20cm">20cm</option>
-                        <option value="23cm">23cm</option>
-                    </select>
-                    <br><br>
-                    <label for="price-red">Price:</label>
-                    <select id="price-red" name="price">
-                        <option value="300">P300.00</option>
-                        <option value="350">P350.00</option>
-                        <option value="400">P400.00</option>
-                        <option value="450">P450.00</option>
-                        </select>
-                        <br><br>
-                        <button type="button">Buy Now</button>
-                    </div>
-
-                <div>
-                    <h3>Carrot Cake</h3>
-                    <p>A light and fluffy carrot cake, perfect for any occasion. Made with high-quality carrot extract and topped with a smooth cream cheese frosting.</p>
-                    <label for="size-carrot">Select Size:</label>
-                    <select id="size-carrot" name="size">
-                        <option value="13cm">13cm</option>
-                        <option value="18cm">18cm</option>
-                        <option value="23cm">23cm</option>
-                        <option value="30cm">30cm</option>
-                    </select>
-                    <br><br>
-                    <label for="price-carrot">Price:</label>
-                    <select id="price-carrot" name="price">
-                        <option value="320">P320.00</option>
-                        <option value="400">P400.00</option>
-                        <option value="490">P490.00</option>
-                        <option value="600">P600.00</option>
-                    </select>
-                    <br><br>
-                    <button type="button">Buy Now</button>
-                </div>
-
-                <div>
-                    <h3>Black Forest Cake</h3>
-                    <p>A rich and decadent cake with layers of chocolate cake, fresh strawberries, and whipped cream, perfect for any special occasion. Made with high-quality cocoa and topped with chocolate shavings.</p>
-                    <label for="size-forest">Select Size:</label>
-                    <select id="size-forest" name="size">
-                        <option value="13cm">13cm</option>
-                        <option value="18cm">18cm</option>
-                        <option value="30cm">30cm</option>
-                    </select>
-                    <br><br>
-                    <label for="price-forest">Price:</label>
-                    <select id="price-forest" name="price">
-                        <option value="300">P300.00</option>
-                        <option value="350">P350.00</option>
-                        <option value="700">P700.00</option>
-                        
-                    </select>
-                    <br><br>
-                    <button type="button">Buy Now</button>
-                    </div>
-
-                    <!--Muffins Section-->
-                    <section>
-                        <h2>MOUTH-WATERING MUFFINS -TAKE A LOOK!</h2>
-                    
-                    <div>
-                        <h3>Rum and Raisin</h3>
-                        <p>Delicious and moist muffins made with the finest ingredients, raisins.</p>
-                        <label for="size-rum">Select Size:</label>
-                        <select id="size-rum" name="size">
-                            <option value="6pcs">6pcs</option>
-                            <option value="12pcs">12pcs</option>
-                        </select>
-                        <br><br>
-                        <label for="price-rum">Price:</label>
-                        <select id="price-rum" name="price">
-                            <option value="90">P90.00</option>
-                            <option value="150">P150.00</option>
-                        </select>
-                        <br><br>
-                        <button type="button">Buy Now</button>
-                    </div>
-
-                    <div>
-                        <h3>All Bran Muffins</h3>
-                        <p>Delicious and moist muffins made with the finest ingredients, blueberries.</p>
-                        <label for="size-bran">Select Size:</label>
-                        <select id="size-bran" name="size">
-                            <option value="6pcs">6pcs</option>
-                            <option value="12pcs">12pcs</option>
-                            <option value="18pcs">18pcs</option>
-                        </select>
-                        <br><br>
-                        <label for="price-bran">Price:</label>
-                        <select id="price-bran" name="price">
-                            <option value="100">P100.00</option>
-                            <option value="150">P150.00</option>
-                            <option value="180">P180.00</option>
-                        </select>
-                        <br><br>
-                        <button type="button">Buy Now</button>
-                    </div>
-
-                    <div>
-                        <h3>Vanilla Muffins</h3>
-                        <p>Delicious and moist muffins made with the finest ingredients, vanilla.</p>
-                        <label for="size-van">Select Size:</label>
-                        <select id="size-van" name="size">
-                            <option value="6pcs">6pcs</option>
-                            <option value="12pcs">12pcs</option>
-                            <option value="18pcs">18pcs</option>
-                        </select>
-                        <br><br>
-                        <label for="price-van">Price:</label>
-                        <select id="price-van" name="price">
-                            <option value="120">P120.00</option>
-                            <option value="150">P150.00</option>
-                            <option value="190">P190.00</option>
-                        </select>
-                        <br><br>
-                        <button type="button">Buy Now</button>
-                    </div>
-
-            </section>
-
-            <!--Cookies Section-->
-            <section>
-                <h2>TIME FOR COOKIES!</h2>
-
-                <div>
-                    <h3>Chocolate Chip Cookies</h3>
-                    <p>Classic chocolate chip cookies made with high-quality chocolate chips and a soft, chewy texture. Perfect for any occasion.</p>
-                    <label for="size-chip">Select Size:</label>
-                    <select id="size-chip" name="size">
-                        <option value="4pcs">4pcs</option>
-                        <option value="6pcs">6pcs</option>
-                        <option value="12pcs">12pcs</option>
-                        <option value="18pcs">18pcs</option>
-                    </select>
-                    <br><br>
-                    <label for="price-chip">Price:</label>
-                    <select id="price-chip" name="price">
-                        <option value="50">P50.00</option>
-                        <option value="80">P80.00</option>
-                        <option value="100">P100.00</option>
-                        <option value="120">P120.00</option>
-                    </select>
-                    <br><br>
-                    <button type="button">Buy Now</button>
-                </div>
-
-                <div>
-                    <h3>Ginger Nuts</h3>
-                    <p>Delicious ginger nuts made with high-quality ginger and a spicy kick, perfect for any occasion.</p>
-                    <label for="size-ginger">Select Size:</label>
-                    <select id="size-ginger" name="size">
-                        <option value="6pcs">6pcs</option>
-                        <option value="12pcs">12pcs</option>
-                        <option value="18pcs">18pcs</option>
-                    </select>
-                    <br><br>
-                    <label for="price-ginger">Price:</label>
-                    <select id="price-ginger" name="price">
-                        <option value="80">P80.00</option>
-                        <option value="160">P160.00</option>
-                        <option value="200">P200.00</option>
-                    </select>
-                    <br><br>
-                    <button type="button">Buy Now</button>
-                </div>
-            </section>
-
-    <!--Brownies Section-->
-    <section>
-        <h2>OUR BROWNIES ARE LIMITED EDITION - CHECK THEM OUT!</h2>
-
-        <div>
-            <h3>Oreo Brownies</h3>
-            <p>A delicious twist on classic brownies, made with high-quality cocoa and chunks of Oreo cookies for added texture and flavor. Perfect for any occasion.</p>
-            <label for="size-brownie">Select Size:</label>
-            <select id="size-brownie" name="size">
-                <option value="6pcs">6pcs</option>
-                <option value="12pcs">12pcs</option>
-                <option value="18pcs">18pcs</option>
-            </select>
-            <br><br>
-            <label for="price-brownie">Price:</label>
-            <select id="price-brownie" name="price">
-                <option value="100">P100.00</option>
-                <option value="120">P120.00</option>
-                <option value="150">P150.00</option>
-            </select>
-            <br><br>
-            <button type="button">Buy Now</button>
+        <div class="circle-logo">
+          <img src="images/logo.png"
+               alt="Heaven's Bakery Logo"
+               class="logo-img">
         </div>
 
-        <div>
-            <h3>Cookies and Cream Brownies</h3>
-            <p>A delightful combination of chocolate brownies and creamy cookie pieces for a unique taste experience. Ideal for chocolate and cookie lovers.</p>
-            <label for="size-cream">Select Size:</label>
-            <select id="size-cream" name="size">
-                <option value="6pcs">6pcs</option>
-                <option value="12pcs">12pcs</option>
-                <option value="18pcs">18pcs</option>
-            </select>
-            <br><br>
-            <label for="price-cream">Price:</label>
-            <select id="price-cream" name="price">
-                <option value="140">P140.00</option>
-                <option value="180">P180.00</option>
-                <option value="200">P200.00</option>
-            </select>
-            <br><br>
-            <button type="button">Buy Now</button>
-        </div>
-    </section>
+        <span class="brand-text">
+          Heavens Bakery
+        </span>
 
-    <!--Cheesecake Section-->
-    <section>
-        <h2>CHEESECAKE SEASON IS HERE!</h2>
+      </div>
 
-        <div>
-            <h3>Peaches Cheesecake</h3>
-            <p>A rich and creamy cheesecake made with high-quality cream cheese and a buttery graham cracker crust. Perfect for any occasion.</p>
-            <label for="size-cheese">Select Size:</label>
-            <select id="size-cheese" name="size">
-                <option value="13cm">13cm</option>
-                <option value="18cm">18cm</option>
-                
-                </select>
-            <br><br>
-            <label for="price-cheese">Price:</label>
-            <select id="price-cheese" name="price">
-                <option value="150">P150.00</option>
-                <option value="200">P200.00</option>
-                
-            </select>
-            <br><br>
-            <button type="button">Buy Now</button>
-        </div>
+      <div class="cart-search">
 
-        <div>
-            <h3>Strawberry Cheesecake</h3>
-            <p>A delicious twist on classic cheesecake, made with high-quality cream cheese and fresh strawberries for added flavor and texture. Perfect for any occasion.</p>
-            <label for="size-strawberry">Select Size:</label>
-            <select id="size-strawberry" name="size">
-                <option value="13cm">13cm</option>
-                <option value="18cm">18cm</option>
-                <option value="23cm">23cm</option>
-                <option value="30cm">30cm</option>
-            </select>
-            <br><br>
-            <label for="price-strawberry">Price:</label>
-            <select id="price-strawberry" name="price">
-                <option value="200">P200.00</option>
-                <option value="280">P280.00</option>
-                <option value="300">P300.00</option>
-                <option value="350">P350.00</option>
-            </select>
-            <br><br> 
-            <button type="button">Buy Now</button>
-        </div>
-    </section>
+        <button class="cart-btn btn btn-primary">
+          MY CART
+        </button>
 
-    </main>
+        <div class="search-wrap">
 
-    <!--Footer Section-->
-    <footer>
-        <p>OUR LOCATION: Commerce Park, Plot 4567, Nelson Mandela Road</p>
-        <p>WORKING HOURS: Mon-Fri 0800hrs-1800hrs | Sat 0800hrs-1530hrs | Sun:CLOSED</p>
-        <p>CONTACT US : +26776789543 / 3976437 | heavensbakery@gmail.com</p>
-        <p>CONNECT WITH US :Facebook | Instagram | Tiktok | Twitter</p>
-        <p>&copy; 2026 Heaven's Bakery.</p>
+          <input type="text"
+                 placeholder="Search your favourite cake..."
+                 class="search-input">
+
+          <button class="search-icon-btn">
             
-    </body>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+      <ul class="nav-links">
+
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="products.html" class="active">PRODUCTS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="policies.html">POLICIES</a></li>
+        <li><a href="customorders.html">CUSTOM ORDER</a></li>
+        <li><a href="delivery.html">DELIVERY & PICKUP</a></li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <!-- =========================
+       PAGE HERO
+  ========================== -->
+  <section class="page-header">
+
+    <div class="container">
+
+      <h1 class="page-title">
+        PRODUCTS
+      </h1>
+
+      <p class="page-subtitle">
+        The best way to bring out your smile!
+      </p>
+
+    </div>
+
+  </section>
+
+  <main>
+
+    
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2 class="section-title-boxed">
+            OUR DELICIOUS CAKES!
+          </h2>
+
+        </div>
+
+        <div class="grid grid-4">
+
+          <!-- CARD -->
+          <article class="card product-card">
+
+            <div class="card-img">
+              <img src="images/choc.jpg"
+                   alt="Death by Chocolate cake">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Death by Chocolate
+              </h3>
+
+              <p class="price">
+                P300.00
+              </p>
+
+              <label> Size:
+                <select class="size-select">
+                  <option value="300">15cm</option>
+                  <option value="360">18cm</option>
+                  <option value="400">20cm</option>
+                </select>
+              </label>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Death by Chocolate"
+                      data-price="300">
+
+                 🛒 BUY NOW!
+
+              </button>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+          <article class="card product-card">
+
+            <div class="card-img">
+              <img src="images/velvet red.jpg"
+                   alt="Red Velvet cake">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Red Velvet
+              </h3>
+
+              <p class="price">
+                P350.00
+              </p>
+
+              <label> Size:
+                <select class="size-select">
+                  <option value="350">15cm</option>
+                  <option value="360">18cm</option>
+                  <option value="400">20cm</option>
+                </select>
+              </label>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Red Velvet"
+                      data-price="350">
+
+                 🛒 BUY NOW!
+
+              </button>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+          <article class="card product-card">
+
+            <div class="card-img">
+              <img src="images/carrot.jpg"
+                   alt="Carrot Cake">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Carrot Cake
+              </h3>
+
+              <p class="price">
+                P400.00
+              </p>
+
+              <label> Size:
+                <select class="size-select">
+                  <option value="400">15cm</option>
+                  <option value="480">18cm</option>
+                  <option value="500">20cm</option>
+                </select>
+              </label>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Carrot Cake"
+                      data-price="400">
+
+                🛒 BUY NOW!
+
+              </button>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+          <article class="card product-card">
+
+            <div class="card-img">
+              <img src="images/black forrr.jpg"
+                   alt="Black Forest cake">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Black Forest
+              </h3>
+
+              <p class="price">
+                P300.00
+              </p>
+
+              <label> Size:
+                <select class="size-select">
+                  <option value="350">15cm</option>
+                  <option value="380">18cm</option>
+                  <option value="400">20cm</option>
+                </select>
+              </label>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Black Forest"
+                      data-price="300">
+
+                🛒 BUY NOW!
+
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    <section class="section section-soft">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2 class="section-title-boxed">
+            MOUTH-WATERING MUFFINS
+          </h2>
+
+          <p class="section-subtitle">
+            Take a look!
+          </p>
+
+        </div>
+
+        <div class="grid grid-3">
+
+          <!-- CARD -->
+          <article class="card product-card">
+
+            <div class="card-img">
+              <img src="images/rum raisin.jpg"
+                   alt="Rum and Raisin muffin">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                RUM & RAISIN
+              </h3>
+
+              <p class="price">
+                P25.00
+              </p>
+
+              <div class="product-options">
+
+                <label>Size:
+
+                <select class="size-select">
+                  <option value="25">half a dozen</option>
+                  <option value="50">a dozen</option>
+                </select>
+</label>
+              </div>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Rum and Raisin Muffin"
+                      data-price="25">
+
+                🛒 BUY NOW! 
+
+              </button>
+
+            </div>
+
+          </article>
+
+          
+          <article class="card product-card">
+
+            <div class="card-img">
+              <img src="images/bran.jpg"
+                   alt="All Bran muffin">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                ALL BRAN
+              </h3>
+
+              <p class="price">
+                P30.00
+              </p>
+
+              <div class="product-options">
+
+                <label>Size:
+
+                <select class="size-select">
+                  <option value="30">PACK OF 4</option>
+                  <option value="45">PACK OF 6</option>
+                  <option value="60">PACK OF 8</option>
+                </select>
+                </label>
+              </div>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="All Bran Muffin"
+                      data-price="30">
+
+                🛒 BUY NOW! 
+
+              </button>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+          <article class="card product-card">
+
+            <div class="card-img">
+              <img src="images/vanilla.jpg"
+                   alt="Vanilla muffin">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                Vanilla
+              </h3>
+
+              <p class="price">
+                P40.00
+              </p>
+
+              <div class="product-options">
+
+                <label>Size:
+
+                <select class="size-select">
+                  <option value="40">a dozen</option>
+                </select>
+</label> 
+              </div>
+
+              <button class="btn btn-primary add-to-cart"
+                      data-name="Vanilla Muffin"
+                      data-price="40">
+
+                🛒 BUY NOW!
+
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    <section class="section">
+
+      <div class="container">
+
+        <div class="grid grid-2">
+
+          <!-- COOKIES -->
+          <div class="content-box">
+
+            <div class="section-header">
+
+              <h2 class="subsection-title">
+                TIME FOR COOKIES!
+              </h2>
+
+            </div>
+
+            <div class="grid grid-2">
+
+              <!-- CARD -->
+              <article class="card product-card">
+
+                <div class="card-img">
+                  <img src="images/choc chipss.jpg"
+                       alt="Chocolate Chip Cookie">
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="card-title">
+                    CHOCOLATE CHIP
+                  </h3>
+
+                  <p class="price">
+                    P15.00 EACH
+                  </p>
+
+                  <div class="product-options">
+
+                    <label>Quantity:
+
+                    <input type="number"
+                           class="input-field gty-input"
+                           value="1"
+                           min="1">
+</label>  
+                  </div>
+
+                  <button class="btn btn-primary add-to-cart">
+
+                     🛒 BUY NOW!
+
+                  </button>
+
+                </div>
+
+              </article>
+
+              <!-- CARD -->
+              <article class="card product-card">
+
+                <div class="card-img">
+                  <img src="images/ging nuts.jpg"
+                       alt="Ginger Nuts Cookie">
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="card-title">
+                    GINGER NUTS
+                  </h3>
+
+                  <p class="price">
+                    P20.00 EACH
+                  </p>
+
+                  <div class="product-options">
+
+                    <label>Quantity:
+
+                    <input type="number"
+                           class="input-field gty-input"
+                           value="1"
+                           min="1">
+                    </label>
+                  </div>
+
+                  <button class="btn btn-primary add-to-cart">
+
+                     🛒 BUY NOW!
+
+                  </button>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+          
+          <div class="content-box">
+
+            <div class="section-header">
+
+              <h2 class="subsection-title">
+                OUR BROWNIES ARE LIMITED EDITION!
+              </h2>
+
+              <p class="section-subtitle">
+                Feast your eyes on something extraordinary
+              </p>
+
+            </div>
+
+            <div class="grid grid-2">
+
+              <!-- CARD -->
+              <article class="card product-card">
+
+                <div class="card-img">
+                  <img src="images/oreo brownss.jpg"
+                       alt="Oreo Brownies">
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="card-title">
+                    Oreo Brownies
+                  </h3>
+
+                  <p class="price">
+                    P65.00
+                  </p>
+
+                  <p class="product-meta">
+                    12 brownies
+                  </p>
+
+                  <button class="btn btn-primary add-to-cart">
+
+                     🛒 BUY NOW!
+
+                  </button>
+
+                </div>
+
+              </article>
+
+              <!-- CARD -->
+              <article class="card product-card">
+
+                <div class="card-img">
+                  <img src="images/cookies-and-cream-brownies-2.jpg"
+                       alt="Cookies and Cream Brownies">
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="card-title">
+                    Cookies & Cream Brownies
+                  </h3>
+
+                  <p class="price">
+                    P75.00
+                  </p>
+
+                  <p class="product-meta">
+                    10 brownies
+                  </p>
+
+                  <button class="btn btn-primary add-to-cart">
+
+                     🛒 BUY NOW!
+
+                  </button>
+
+                </div>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    
+    <section class="section section-soft">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <h2 class="section-title-boxed">
+            CHEESECAKE SEASON IS HERE!
+          </h2>
+
+        </div>
+
+        <div class="grid grid-2">
+
+          <!-- CARD -->
+          <article class="card horizontal-card">
+
+            <div class="card-img">
+              <img src="images/straw cheese.jpg"
+                   alt="Strawberry Cheesecake">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                STRAWBERRY CHEESECAKE
+              </h3>
+
+              <p class="price">
+                P50.00
+              </p>
+
+              <p class="product-meta">
+                Only in 15cm
+              </p>
+
+              <button class="btn btn-primary add-to-cart"
+              data-name="Strawberry Cheesecake"
+              data-price="50">
+
+
+                 🛒 BUY NOW!
+
+              </button>
+
+            </div>
+
+          </article>
+
+          <!-- CARD -->
+          <article class="card horizontal-card">
+
+            <div class="card-img">
+              <img src="images/peach cheese.jpg"
+                   alt="Peaches Cheesecake">
+            </div>
+
+            <div class="card-content">
+
+              <h3 class="card-title">
+                PEACHES CHEESECAKE
+              </h3>
+
+              <p class="price">
+                P55.00
+              </p>
+
+              <label> Size:
+
+              <select class="size-select">
+                <option value="55">15cm</option>
+                <option value="80">20cm</option>
+                <option value="100">30cm</option>
+              </select>
+              </label>
+
+              <button class="btn btn-primary add-to-cart"
+              data-name="Peaches Cheesecake"
+              data-price="55">
+
+                 🛒 BUY NOW!
+
+              </button>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  
+  <footer class="site-footer">
+
+    <div class="footer-columns container">
+
+      <div class="footer-col">
+
+        <div class="footer-logo-circle">
+          <img src="images/logo.png"
+               alt="Heaven's Bakery logo">
+        </div>
+
+        <p class="footer-slogan">
+          Baked fresh daily, delivered with love
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> OUR LOCATION</h4>
+
+        <p>
+          Commerce Park, Plot 4587,
+          Nelson Mandela Road.
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> WORKING HOURS</h4>
+
+        <p>
+          Mon-Fri 0800hrs - 1800hrs<br>
+          Sat 0800hrs - 1530hrs<br>
+          Sun: CLOSED
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> CONTACT US</h4>
+
+        <p>
+           +267 76789543 / 3976437<br>
+           heavensbakery@gmail.com
+        </p>
+
+        <div class="social-row">
+
+          <span>CONNECT WITH US!</span>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+      <p>@2026 | Heaven's Bakery</p>
+    </div>
+
+  </footer>
+
+  
+  <div id="cart-toast" class="toast-message"></div>
+  <script src="script.js"></script>
+
+</body>
 </html>

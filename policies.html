@@ -1,62 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heaven's Bakery - Policies</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heaven's Bakery | Policies</title>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Heaven's Bakery</h1>
-        <p>Baked fresh daily, delivered with love.</p>
-    </header>
 
-    <!-- Navigation Section -->
+    <header class="site-header">
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="products.html">Products</a> |
-        <a href="about.html">About Us</a> |
-        <a href="contact.html">Contact Us</a>
-        <a href="custom-orders.html">Custom Orders</a>
-        <a href="policies.html">Policies</a>
-        <a href="delivery.html">Delivery & Pickups</a>
+    <div class="top-bar container">
+
+      <div class="logo-area">
+
+        <div class="circle-logo">
+          <img src="images/logo.png"
+               alt="Heaven's Bakery Logo"
+               class="logo-img">
+        </div>
+
+        <span class="brand-text">
+          Heavens Bakery
+        </span>
+
+      </div>
+
+      <div class="cart-search">
+
+        <button class="cart-btn btn btn-primary">
+          MY CART
+        </button>
+
+        <div class="search-wrap">
+
+          <input type="text"
+                 placeholder="Search your favourite cake..."
+                 class="search-input">
+
+          <button class="search-icon-btn">
+            <i class="fas fa-search"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <nav class="navbar">
+
+      <ul class="nav-links">
+
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="products.html" class="active">PRODUCTS</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="policies.html">POLICIES</a></li>
+        <li><a href="customorders.html">CUSTOM ORDER</a></li>
+        <li><a href="delivery.html">DELIVERY & PICKUP</a></li>
+
+      </ul>
+
     </nav>
 
+  </header>
 
-<!-- Main Policies Section -->
-    <main>
-         
-        <!--Allergy Information Section-->
+  
+    
 
-        <section>
-            <h2>ALLERGY AND DIETARY INFORMATION</h2>
-            <p>Welcome to Heaven's Bakery! We are committed to providing you with the best baking experience. Please take a moment to review our policies: paragraph on allergy and dietary restrictions.</p>
-        </section>
+  
+  <main>
 
-            <!--Custom Order Policies-->
-            <section>
-                <h2>Custom Order Policies</h2>
-                <p>We offer custom cakes and baked goods to suit your specific needs. Please review our custom order policies for more information on how to place an order, lead times, and any special requirements. Short paragraph on policy.</p>
-</section>  
+    <section class="policies-section">
 
-<!--Cancellations and Refunds-->
-        <section>
-            <h2>Cancellations and Refunds</h2>
-            <p>We understand that sometimes plans change. Please review our cancellation and refund policies for information on how to cancel an order and the conditions under which refunds may be issued. Short paragraph on policy.</p>
-        </section>
+      
+      <div class="policy-grid">
 
-        </main>
+        <!-- CARD 1 -->
+        <div class="policy-card">
 
-        <!--Footer-->
-        <footer>
-        <p>OUR LOCATION: Commerce Park, Plot 4567, Nelson Mandela Road</p>
-        <p>WORKING HOURS: Mon-Fri 0800hrs-1800hrs | Sat 0800hrs-1530hrs | Sun:CLOSED</p>
-        <p>CONTACT US : +26776789543 / 3976437 | heavensbakery@gmail.com</p>
-        <p>CONNECT WITH US :Facebook | Instagram | Tiktok | Twitter</p>
-        <p>&copy; 2026 Heaven's Bakery.</p>
-    </footer>
+          <div class="policy-icon">
+            
+          </div>
+
+          <h2 class="policy-title">
+            Allergy & Dietary Information
+          </h2>
+
+          <p class="policy-text">
+            Heaven's Bakery takes allergies and dietary restrictions seriously. Please do notify us of any allergies or dietary requirements when placing an order. We handle common allergis including, nuts, eggs, dairy, soy and glutten. We also follow careful preparation practices but we cannot guarantee an allergen-free environment. Vegan, vegetarian, glutten-free and other specialty options are available upon request, but may require additional lead time for preparation.
+          </p>
+
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="text-block-large">
+
+          <div class="policy-icon">
+            
+          </div>
+
+          <h2 class="policy-title">
+            Cancellation & Refund Policy
+          </h2>
+
+          <p class="mission-text-block">
+            Full payment must be completed before custom orders are
+            processed. We accept cash, card payments, and mobile payment
+            methods approved by the bakery. For large celebration cakes
+            and catering orders, a deposit may be required before work
+            begins. Refunds are only issued in cases where the bakery is
+            unable to fulfill the confirmed order.
+            Orders may be cancelled atleast 24-28 hours before the scheduled collection or delivery for a full/partial refund. Cancellations made after this period do not qualify for a refund.
+            
+          </p>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="text-block-large">
+
+          <div class="policy-icon">
+            
+          </div>
+
+          <h2 class="policy-title">
+            Custom Order Policy
+          </h2>
+
+          <p class="policy-text">
+            Custom cakes and specialty orders should be placed several
+            days in advance to allow our bakers enough preparation time.
+            Customers are responsible for providing accurate spelling,
+            colors, themes, and design requests before confirmation.
+            Once preparation has started, major changes to the order may
+            not be possible. Heaven's Bakery reserves the right to decline
+            designs that cannot be completed within the requested time.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="footer-columns container">
+
+      <div class="footer-col">
+
+        <div class="footer-logo-circle">
+          <img src="images/logo.png"
+               alt="Heaven's Bakery logo">
+        </div>
+
+        <p class="footer-slogan">
+          Baked fresh daily, delivered with love
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> OUR LOCATION</h4>
+
+        <p>
+          Commerce Park, Plot 4587,
+          Nelson Mandela Road.
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> WORKING HOURS</h4>
+
+        <p>
+          Mon-Fri 0800hrs - 1800hrs<br>
+          Sat 0800hrs - 1530hrs<br>
+          Sun: CLOSED
+        </p>
+
+      </div>
+
+      <div class="footer-col">
+
+        <h4> CONTACT US</h4>
+
+        <p>
+           +267 76789543 / 3976437<br>
+           heavensbakery@gmail.com
+        </p>
+
+        <div class="social-row">
+
+          <span>CONNECT WITH US!</span>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+      <p>@2026 | Heaven's Bakery</p>
+    </div>
+
+  </footer>
+
+ 
+  <!-- Toast -->
+  <div id="cart-toast" class="toast-message"></div>
+
 </body>
 </html>
